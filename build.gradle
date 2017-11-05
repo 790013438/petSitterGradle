@@ -1,14 +1,62 @@
-group 'snippets.jee'
-version '1.0-SNAPSHOT'
-
-apply plugin: 'java'
-
-sourceCompatibility = 1.8
-
-repositories {
-    mavenCentral()
+plugins {
+    id 'com.gradle.build-scan' version '1.9'
 }
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+buildScan {
+    licenseAgreementUrl = 'https://gradle.com/terms-of-service'
+    licenseAgree = 'yes'
+}
+
+//gradle build -Dreceipt
+
+allprojects {
+    version = '1.0-SNAPSHOT'
+    group 'snippets.jee'
+
+    ext {
+        //spring libs
+        springVersion = '4.3.10.RELEASE'
+
+        //testing libs
+        junitVersion = 'junit:4.12'
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.8
+    // Make sure transitive project dependencies are resolved
+    configurations.compile.transitive = true
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testCompile 'junit:junit:4.12'
+    }
+}
+
+task allCompile {
+    doLast {
+        description 'Task used to compile all modules in the project without running tests'
+        subprojects.each { p ->
+            p.getTasksByName("clean", true).each { t ->
+                println "-> $p.name [CLEAN]"
+                t.execute();
+            }
+            p.getTasksByName("compileJava", true).each { t ->
+                println "-> $p.name [COMPILE]"
+                t.execute();
+            }
+            p.getTasksByName("classes", true).each { t ->
+                println "-> $p.name [CLASSES]"
+                t.execute();
+            }
+            p.getTasksByName("jar", true).each {
+                println "-> $p.name [JAR]"
+                t.execute();
+            }
+        }
+    }
 }

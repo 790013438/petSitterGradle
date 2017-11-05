@@ -1,0 +1,4 @@
+task allCompileDeps(type: DependencyReportTask) {
+    description 'Task used to print dependencies'
+    configurations = [this.configurations.compile] as Set
+}

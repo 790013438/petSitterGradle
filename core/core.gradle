@@ -1,3 +1,13 @@
+dependencies {
+    compile 'org.springframework:spring-jdbc:4.3.10.RELEASE'
+    compile 'org.springframework:spring-orm:4.3.10.RELEASE'
+    compile 'org.springframework:spring-context:4.3.10.RELEASE'
+    compile 'org.springframework.data:spring-data-releasetrain:Ingalls-SR3'
+    compile 'org.hibernate:hibernate-ehcache:5.2.10.Final'
+    compile 'org.hibernate:hibernate-core:5.2.10.Final'
+    compile 'org.hibernate:hibernate-validator:5.4.1.Final'
+}
+
 task allCompileDeps(type: DependencyReportTask) {
     description 'Task used to print dependencies'
     configurations = [this.configurations.compile] as Set

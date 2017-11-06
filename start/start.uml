@@ -3,13 +3,47 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="0.0">snippets.jee.repositories.AbstractRepo</node>
+    <node x="230.0" y="0.0">snippets.jee.repositories.AbstractRepo</node>
+    <node x="119.0" y="184.5">snippets.jee.repositories.ReviewRepo</node>
+    <node x="260.0" y="184.5">snippets.jee.repositories.ResponseRepo</node>
+    <node x="418.0" y="184.5">snippets.jee.repositories.RequestRepo</node>
+    <node x="566.0" y="173.0">snippets.jee.repositories.UserRepo</node>
+    <node x="0.0" y="184.5">snippets.jee.repositories.PetRepo</node>
   </nodes>
   <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="-18.0" y="-190.5" />
+  <edges>
+    <edge source="snippets.jee.repositories.ReviewRepo" target="snippets.jee.repositories.AbstractRepo">
+      <point x="0.0" y="-15.5" />
+      <point x="179.5" y="153.0" />
+      <point x="289.4" y="153.0" />
+      <point x="-39.60000000000002" y="61.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.RequestRepo" target="snippets.jee.repositories.AbstractRepo">
+      <point x="0.0" y="-15.5" />
+      <point x="482.0" y="153.0" />
+      <point x="368.59999999999997" y="153.0" />
+      <point x="39.599999999999966" y="61.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.PetRepo" target="snippets.jee.repositories.AbstractRepo">
+      <point x="0.0" y="-15.5" />
+      <point x="49.5" y="143.0" />
+      <point x="249.8" y="143.0" />
+      <point x="-79.19999999999999" y="61.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.ResponseRepo" target="snippets.jee.repositories.AbstractRepo">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.UserRepo" target="snippets.jee.repositories.AbstractRepo">
+      <point x="0.0" y="-27.0" />
+      <point x="739.0" y="143.0" />
+      <point x="408.19999999999993" y="143.0" />
+      <point x="79.19999999999993" y="61.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="438.0" y="203.5" />
   <SelectedNodes>
-    <node>snippets.jee.repositories.AbstractRepo</node>
+    <node>snippets.jee.repositories.UserRepo</node>
   </SelectedNodes>
   <Categories>
     <Category>Fields</Category>

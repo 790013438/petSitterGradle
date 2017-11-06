@@ -6,6 +6,8 @@ dependencies {
     compile 'org.hibernate:hibernate-ehcache:5.2.10.Final'
     compile 'org.hibernate:hibernate-core:5.2.10.Final'
     compile 'org.hibernate:hibernate-validator:5.4.1.Final'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.9.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.0'
 }
 
 task allCompileDeps(type: DependencyReportTask) {

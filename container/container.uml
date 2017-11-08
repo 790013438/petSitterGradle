@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="516.0" y="91.0">snippets.jee.repositories.stub.StubAbstractRepo</node>
+    <node x="698.75" y="205.0">snippets.jee.repositories.stub.stub.StubPetRepo</node>
+    <node x="843.75" y="205.0">snippets.jee.repositories.stub.stub.StubReviewRepo</node>
+    <node x="442.99999999999994" y="0.0">snippets.jee.repositories.AbstractRepo</node>
+    <node x="893.5" y="102.5">snippets.jee.repositories.ReviewRepo</node>
+    <node x="322.49999999999994" y="205.0">snippets.jee.repositories.stub.stub.StubRequestRepo</node>
+    <node x="168.49999999999994" y="205.0">snippets.jee.repositories.stub.stub.StubUserRepo</node>
+    <node x="496.49999999999994" y="205.0">snippets.jee.repositories.stub.stub.StubResponseRepo</node>
+    <node x="326.49999999999994" y="102.5">snippets.jee.repositories.ResponseRepo</node>
+    <node x="0.0" y="102.5">snippets.jee.repositories.RequestRepo</node>
+    <node x="147.99999999999994" y="102.5">snippets.jee.repositories.UserRepo</node>
+    <node x="743.0" y="102.5">snippets.jee.repositories.PetRepo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="snippets.jee.repositories.stub.stub.StubUserRepo" target="snippets.jee.repositories.stub.StubAbstractRepo">
+      <point x="33.5" y="-15.5" />
+      <point x="268.99999999999994" y="175.0" />
+      <point x="536.7" y="175.0" />
+      <point x="-82.79999999999995" y="27.0" />
+    </edge>
+    <edge source="snippets.jee.repositories.stub.StubAbstractRepo" target="snippets.jee.repositories.AbstractRepo">
+      <point x="0.0" y="-27.0" />
+      <point x="619.5" y="71.0" />
+      <point x="518.25" y="71.0" />
+      <point x="10.75" y="15.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.stub.stub.StubRequestRepo" target="snippets.jee.repositories.stub.StubAbstractRepo">
+      <point x="38.5" y="-15.5" />
+      <point x="437.99999999999994" y="185.0" />
+      <point x="578.0999999999999" y="185.0" />
+      <point x="-41.39999999999998" y="27.0" />
+    </edge>
+    <edge source="snippets.jee.repositories.stub.stub.StubPetRepo" target="snippets.jee.repositories.stub.StubAbstractRepo">
+      <point x="-31.25" y="-15.5" />
+      <point x="730.0" y="185.0" />
+      <point x="660.9000000000001" y="185.0" />
+      <point x="41.40000000000009" y="27.0" />
+    </edge>
+    <edge source="snippets.jee.repositories.ReviewRepo" target="snippets.jee.repositories.AbstractRepo">
+      <point x="0.0" y="-15.5" />
+      <point x="954.0" y="51.0" />
+      <point x="561.25" y="51.0" />
+      <point x="53.75" y="15.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.stub.stub.StubResponseRepo" target="snippets.jee.repositories.ResponseRepo">
+      <point x="-41.0" y="-15.5" />
+      <point x="537.5" y="165.0" />
+      <point x="429.99999999999994" y="165.0" />
+      <point x="34.5" y="15.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.stub.stub.StubRequestRepo" target="snippets.jee.repositories.ResponseRepo">
+      <point x="-38.5" y="-15.5" />
+      <point x="-34.5" y="15.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.stub.stub.StubResponseRepo" target="snippets.jee.repositories.stub.StubAbstractRepo">
+      <point x="41.0" y="-15.5" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="snippets.jee.repositories.ResponseRepo" target="snippets.jee.repositories.AbstractRepo">
+      <point x="0.0" y="-15.5" />
+      <point x="395.49999999999994" y="71.0" />
+      <point x="496.74999999999994" y="71.0" />
+      <point x="-10.75" y="15.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.PetRepo" target="snippets.jee.repositories.AbstractRepo">
+      <point x="0.0" y="-15.5" />
+      <point x="792.5" y="61.0" />
+      <point x="539.75" y="61.0" />
+      <point x="32.25" y="15.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.RequestRepo" target="snippets.jee.repositories.AbstractRepo">
+      <point x="0.0" y="-15.5" />
+      <point x="64.0" y="51.0" />
+      <point x="453.74999999999994" y="51.0" />
+      <point x="-53.75" y="15.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.stub.stub.StubReviewRepo" target="snippets.jee.repositories.ReviewRepo">
+      <point x="36.75" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.stub.stub.StubPetRepo" target="snippets.jee.repositories.PetRepo">
+      <point x="31.25" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.stub.stub.StubUserRepo" target="snippets.jee.repositories.UserRepo">
+      <point x="-33.5" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="snippets.jee.repositories.stub.stub.StubReviewRepo" target="snippets.jee.repositories.stub.StubAbstractRepo">
+      <point x="-36.75" y="-15.5" />
+      <point x="880.5" y="175.0" />
+      <point x="702.3" y="175.0" />
+      <point x="82.80000000000007" y="27.0" />
+    </edge>
+    <edge source="snippets.jee.repositories.UserRepo" target="snippets.jee.repositories.AbstractRepo">
+      <point x="0.0" y="-15.5" />
+      <point x="201.99999999999994" y="61.0" />
+      <point x="475.24999999999994" y="61.0" />
+      <point x="-32.25" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="579.0" y="173.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

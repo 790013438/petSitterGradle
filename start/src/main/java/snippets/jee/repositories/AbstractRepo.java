@@ -9,5 +9,5 @@ public interface AbstractRepo<T extends AbstractEntity> {
 
     void deleteById(Long id);
 
-    T findByid(Long id);
+    T findById(Long id);
 }

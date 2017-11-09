@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="675.5" y="323.0">snippets.video.Comment</node>
+    <node x="571.5" y="323.0">snippets.video.Video</node>
+    <node x="256.5" y="323.0">snippets.video.Note</node>
+    <node x="371.0" y="81.0">snippets.video.AbstractEntity</node>
+    <node x="10.5" y="254.0">snippets.video.UserSpace</node>
+    <node x="355.5" y="265.5">snippets.video.User</node>
+    <node x="395.5" y="0.0">java.io.Serializable</node>
+  </nodes>
+  <notes>
+    <note x="0.0" y="118.5">
+      <node>snippets.video.UserSpace</node>
+      <value>stars是收藏的视频\nlearned是学过的课程</value>
+      <edge>
+        <point x="-56.5" y="-84.5" />
+        <point x="0.0" y="24.0" />
+      </edge>
+    </note>
+  </notes>
+  <edges>
+    <edge source="snippets.video.Note" target="snippets.video.AbstractEntity">
+      <point x="0.0" y="-15.5" />
+      <point x="296.0" y="234.0" />
+      <point x="420.5" y="234.0" />
+      <point x="-33.0" y="61.5" />
+    </edge>
+    <edge source="snippets.video.Video" target="snippets.video.AbstractEntity">
+      <point x="0.0" y="-15.5" />
+      <point x="613.5" y="234.0" />
+      <point x="486.5" y="234.0" />
+      <point x="33.0" y="61.5" />
+    </edge>
+    <edge source="snippets.video.UserSpace" target="snippets.video.AbstractEntity">
+      <point x="56.5" y="-84.5" />
+      <point x="180.0" y="224.0" />
+      <point x="387.5" y="224.0" />
+      <point x="-66.0" y="61.5" />
+    </edge>
+    <edge source="snippets.video.AbstractEntity" target="java.io.Serializable">
+      <point x="0.0" y="-61.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="snippets.video.Comment" target="snippets.video.AbstractEntity">
+      <point x="0.0" y="-15.5" />
+      <point x="728.5" y="224.0" />
+      <point x="519.5" y="224.0" />
+      <point x="66.0" y="61.5" />
+    </edge>
+    <edge source="snippets.video.User" target="snippets.video.AbstractEntity">
+      <point x="0.0" y="-73.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="477.0" y="391.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

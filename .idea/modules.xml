@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exam.iml" filepath="$PROJECT_DIR$/.idea/modules/exam.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/petSitterGradle.iml" filepath="$PROJECT_DIR$/.idea/modules/petSitterGradle.iml" />
     </modules>
   </component>

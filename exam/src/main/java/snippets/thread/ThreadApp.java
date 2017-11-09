@@ -1,8 +1,10 @@
 package snippets.thread;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class ThreadApp {
 
-    private static int sum;
+    private static AtomicInteger sum = new AtomicInteger();
 
     static class AddThread implements Runnable {
 
@@ -17,7 +19,7 @@ public class ThreadApp {
         @Override
         public void run() {
             for (int i = begin; i <= end; ++i) {
-                sum += i;
+                sum.getAndAdd(i);
             }
         }
     }

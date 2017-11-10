@@ -29,13 +29,7 @@ subprojects {
     configurations.compile.transitive = true
 
     repositories {
-        jcenter()
-        mavenLocal()
         mavenCentral()
-        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
-        maven { url "http://repo.spring.io/snapshot/" }
-        maven { url "http://repo.spring.io/milestone" }
-        maven { url "https://plugins.gradle.org/m2/" }
     }
 
     dependencies {

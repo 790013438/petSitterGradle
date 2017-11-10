@@ -29,8 +29,6 @@ subprojects {
     configurations.compile.transitive = true
 
     repositories {
-        jcenter()
-        mavenLocal()
         mavenCentral()
     }
 

@@ -11,9 +11,9 @@ public class ThreadApp {
     private static AtomicInteger sum = new AtomicInteger();
     private static ExecutorService executorService = Executors.newFixedThreadPool(2);
 
-    static class AddThread implements Callable<AtomicInteger> {
+    static class AddThread implements Callable<Integer> {
 
-        private AtomicInteger sum = new AtomicInteger(0);
+        private Integer sum = 0;
         private int begin;
         private int end;
 
@@ -23,21 +23,21 @@ public class ThreadApp {
         }
 
         @Override
-        public AtomicInteger call() {
+        public Integer call() {
             for (int i = begin; i <= end; ++i) {
-                sum.addAndGet(i);
+                sum += i;
             }
             return sum;
         }
     }
 
     public static void main(String[] args) {
-        Future<AtomicInteger> future1 = executorService.submit(new AddThread(1, 10000));
-        Future<AtomicInteger> future2 = executorService.submit(new AddThread(10001, 20000));
+        Future<Integer> future1 = executorService.submit(new AddThread(1, 10000));
+        Future<Integer> future2 = executorService.submit(new AddThread(10001, 20000));
         try {
-            AtomicInteger atomicInteger0 = future1.get();
-            AtomicInteger atomicInteger1 = future2.get();
-            System.out.println(atomicInteger0.addAndGet(atomicInteger1.intValue()));
+            Integer integer0 = future1.get();
+            Integer integer1 = future2.get();
+            System.out.println(integer0 + integer1);
         } catch (Exception e) {
             e.printStackTrace();
         }
